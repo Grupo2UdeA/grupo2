@@ -1,4 +1,24 @@
 <resources>
-    <string name="app_name">Grupo2</string>
+    <string name="app_name">PA2</string>
     <string name="option1">option</string>
+    <string name="titleMain">ÁREAS Y PERIMETROS</string>
+    <string name="subTitleActivityMain">calcular áreas y perímetros de figuras geométricas</string>
+    <string name="AREAS">ÁREAS</string>
+    <string name="PERIMETERS">PERÍMETROS</string>
+    <string name="todo">TODO</string>
+    <string name="square">Cuadrado</string>
+    <string name="side">Lado del cuadrado</string>
+    <string name="calculate">calcular</string>
+    <string name="ecuaP">P=4l</string>
+    <string name="ecuaA">A=l*l</string>
+
+    <string-array name="figurs">
+        <item>Triángulo</item>
+        <item>Cuadrado</item>
+        <item>Rectángle</item>
+        <item>Pentágono</item>
+        <item>Hexágono</item>
+        <item>Círculo</item>
+    </string-array>
+
 </resources>

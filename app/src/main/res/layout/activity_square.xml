@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider"
+    tools:context=".SquareActivity">
+
+    <TextView
+        android:id="@+id/title_aquare_activity_text_view"
+        style="@style/textViewTitle.H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/square"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/square_image_view"
+        android:layout_width="355dp"
+        android:layout_height="246dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_aquare_activity_text_view"
+        app:srcCompat="@drawable/cuadrado" />
+
+    <TextView
+        android:id="@+id/Perimerter_text_view"
+        style="@style/textViewTitle.H2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/PERIMETERS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square_image_view" />
+
+    <TextView
+        android:id="@+id/answer_perimeter_text_view"
+        style="@style/textViewTitle.H2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/Perimerter_text_view"
+        app:layout_constraintStart_toStartOf="@+id/Perimerter_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/Perimerter_text_view" />
+
+    <TextView
+        android:id="@+id/answer_area_text_view"
+        style="@style/textViewTitle.H2"
+        android:layout_width="81dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/area_text_view"
+        app:layout_constraintStart_toStartOf="@+id/area_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/area_text_view" />
+
+    <TextView
+        android:id="@+id/area_text_view"
+        style="@style/textViewTitle.H2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/AREAS"
+        app:layout_constraintBottom_toBottomOf="@+id/Perimerter_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Perimerter_text_view"
+        app:layout_constraintTop_toTopOf="@+id/Perimerter_text_view"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/side_square_text_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer_area_text_view">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/side_square_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/sheet_bottom"
+            android:backgroundTint="@color/primary_light"
+            android:hint="@string/side"
+            android:inputType="number"
+            android:textColorHint="#4E342E"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="340dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/calculate"
+        android:textColor="#1B5E20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/side_square_text_input_layout" />
+
+    <TextView
+        android:id="@+id/ecuaP_text_view"
+        style="@style/textViewTitle.H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="@string/ecuaP"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="@+id/Perimerter_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/title_aquare_activity_text_view" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/textViewTitle.H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ecuaA"
+        app:layout_constraintEnd_toEndOf="@+id/square_image_view"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="@+id/square_image_view"
+        app:layout_constraintTop_toTopOf="@+id/ecuaP_text_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
