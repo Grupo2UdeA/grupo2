@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Circle.CircleActivity">
+    tools:context=".ui.circle.CircleActivity">
 
     <TextView
         android:id="@+id/circle_title"
