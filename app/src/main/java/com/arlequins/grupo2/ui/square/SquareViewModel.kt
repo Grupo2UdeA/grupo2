@@ -19,12 +19,7 @@ class SquareViewModel: ViewModel(){
     var resultA: LiveData<String> = result2
 
     fun obtainSide(externalSide: String){
-        try {
-            side = externalSide.toFloat()
-        }
-        finally {
-            side = 0.0f
-        }
+        side = externalSide.toFloat()
     }
 
     private fun calculatePerimeter(){
