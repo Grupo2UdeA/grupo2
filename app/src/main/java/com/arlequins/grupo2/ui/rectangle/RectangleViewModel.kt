@@ -1,4 +1,4 @@
-package com.arlequins.grupo2
+package com.arlequins.grupo2.ui.rectangle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

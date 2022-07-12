@@ -1,10 +1,11 @@
-package com.arlequins.grupo2
+package com.arlequins.grupo2.ui.rectangle
 
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.arlequins.grupo2.R
 import com.arlequins.grupo2.databinding.ActivityRectangleBinding
 
 class RectangleActivity : AppCompatActivity() {
