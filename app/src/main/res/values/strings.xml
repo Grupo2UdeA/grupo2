@@ -11,6 +11,11 @@
     <string name="calculate">Calcular</string>
     <string name="ecuaP">P=4l</string>
     <string name="ecuaA">A=l*l</string>
+    <string name="Circle">Círculo</string>
+    <string name="perimeter_circle">P = 2 * pi * R</string>
+    <string name="area_circle">A = pi * R^2</string>
+    <string name="radio">Ingrese el radio</string>
+    <string name="circle_image">circle_image</string>
 
     <string name="rectangle">Rectángulo</string>
     <string name="width">Ancho</string>

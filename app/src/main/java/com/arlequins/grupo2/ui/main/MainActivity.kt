@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import com.arlequins.grupo2.databinding.ActivityMainBinding
+import com.arlequins.grupo2.ui.circle.CircleActivity
 import com.arlequins.grupo2.ui.rectangle.RectangleActivity
 import com.arlequins.grupo2.ui.square.SquareActivity
 
@@ -28,12 +29,15 @@ class MainActivity : AppCompatActivity() {
             sendButton.setOnClickListener {
                 val figure = figursSpinner.selectedItem.toString()
                 if (figure == "Cuadrado") goToSquare()
+                if (figure == "Círculo") goToCircle()
                 if (figure == "Rectángulo") goToRectangle()
             }
         }
     }
-
-
+    private fun goToCircle() {
+        val intent = Intent(this, CircleActivity::class.java)
+        startActivity(intent)
+    }
     private fun goToSquare() {
         val intent = Intent(this, SquareActivity::class.java)
         startActivity(intent)

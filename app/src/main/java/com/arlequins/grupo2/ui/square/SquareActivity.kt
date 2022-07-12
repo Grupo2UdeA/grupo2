@@ -3,11 +3,13 @@ package com.arlequins.grupo2.ui.square
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.lifecycle.ViewModelProvider
 import com.arlequins.grupo2.databinding.ActivitySquareBinding
 
 
 @SuppressLint("StaticFieldLeak")
 private lateinit var squareBinding: ActivitySquareBinding
+private lateinit var squareViewModel: SquareViewModel
 
 class SquareActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,15 +18,25 @@ class SquareActivity : AppCompatActivity() {
         val view = squareBinding.root
         setContentView(view)
 
+
+        squareViewModel = ViewModelProvider(this)[SquareViewModel::class.java]
+        setContentView(view)
+
+        squareViewModel.resultP.observe(this){
+            squareBinding.answerPerimeterTextView.text = it
+        }
+
+        squareViewModel.resultA.observe(this){
+            squareBinding.answerAreaTextView.text = it
+        }
+
         with(squareBinding){
             calculateButton.setOnClickListener{
-                val side = sideSquareInputText.text.toString().toFloat()
-                val perimeter = side*4
-                val area = side*side
-
-                answerPerimeterTextView.text = perimeter.toString()
-                answerAreaTextView.text = area.toString()
+                squareViewModel.obtainSide(sideSquareInputText.text.toString())
+                squareViewModel.calculateAll()
             }
         }
     }
 }
+
+
