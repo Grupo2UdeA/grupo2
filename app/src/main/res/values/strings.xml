@@ -8,7 +8,7 @@
     <string name="todo">TODO</string>
     <string name="square">Cuadrado</string>
     <string name="side">Lado del cuadrado</string>
-    <string name="calculate">calcular</string>
+    <string name="calculate">Calcular</string>
     <string name="ecuaP">P=4l</string>
     <string name="ecuaA">A=l*l</string>
     <string name="Circle">Círculo</string>
@@ -17,10 +17,17 @@
     <string name="radio">Ingrese el radio</string>
     <string name="circle_image">circle_image</string>
 
+    <string name="rectangle">Rectángulo</string>
+    <string name="width">Ancho</string>
+    <string name="length">Longitud</string>
+    <string name="infoRectangle">"Perímetro: %s\nÁrea: %s\n"</string>
+    <string name="emptyInput">Ingresa los datos.</string>
+    <string name="rectangle_image">Imagen Rectangulo</string>
+
     <string-array name="figurs">
         <item>Triángulo</item>
         <item>Cuadrado</item>
-        <item>Rectángle</item>
+        <item>Rectángulo</item>
         <item>Pentágono</item>
         <item>Hexágono</item>
         <item>Círculo</item>

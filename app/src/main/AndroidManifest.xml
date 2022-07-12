@@ -17,6 +17,12 @@
             android:name=".ui.circle.CircleActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.rectangle.RectangleViewModel"
+            android:exported="false" />
+        <activity
+            android:name=".ui.rectangle.RectangleActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.square.SquareActivity"
             android:exported="false" />
         <activity
@@ -32,9 +38,6 @@
             android:name=".ui.main.MainActivity"
             android:exported="true" />
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
