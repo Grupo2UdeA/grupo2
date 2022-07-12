@@ -13,7 +13,7 @@ class CircleActivity : AppCompatActivity() {
         circleBinding = ActivityCircleBinding.inflate(layoutInflater)
         val view = circleBinding.root
 
-        circleViewModel = ViewModelProvider(this).get(CircleViewModel::class.java)
+        circleViewModel = ViewModelProvider(this)[CircleViewModel::class.java]
         setContentView(view)
 
         circleViewModel.result2.observe(this){

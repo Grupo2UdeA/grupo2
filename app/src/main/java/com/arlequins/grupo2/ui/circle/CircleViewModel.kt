@@ -10,7 +10,6 @@ class CircleViewModel: ViewModel() {
     private var pi: Float = 3.1416f
     private var area: Float = 0.0f
     private var perimeter : Float = 0.0f
-    private var result : String = ""
     private var areaString : String = ""
     private var perimeterString : String = ""
 
@@ -36,6 +35,6 @@ class CircleViewModel: ViewModel() {
 
     fun showResults(){
         convToString()
-        result = "Area: $areaString\nPerimetro: $perimeterString"
+        result1.value = "Area: $areaString\nPerimetro: $perimeterString"
     }
 }
