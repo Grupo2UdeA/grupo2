@@ -14,11 +14,12 @@
         android:theme="@style/Theme.Grupo2"
         tools:targetApi="31">
         <activity
-            android:name=".ui.circle.CircleActivity"
+            android:name=".ui.triangle.TriangleActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.rectangle.RectangleViewModel"
+            android:name=".ui.circle.CircleActivity"
             android:exported="false" />
+
         <activity
             android:name=".ui.rectangle.RectangleActivity"
             android:exported="false" />
@@ -37,7 +38,6 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:exported="true" />
-
     </application>
 
 </manifest>
