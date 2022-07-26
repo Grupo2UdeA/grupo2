@@ -16,11 +16,25 @@
     <string name="button">Calcular</string>
     <string name="result_t" />
     <string name="text_title">Pentagono</string>
+    <string name="Circle">Círculo</string>
+    <string name="perimeter_circle">P = 2 * pi * R</string>
+    <string name="area_circle">A = pi * R^2</string>
+    <string name="radio">Radio</string>
+    <string name="circle_image">circle_image</string>
+
+    <string name="rectangle">Rectángulo</string>
+    <string name="width">Ancho</string>
+    <string name="length">Longitud</string>
+    <string name="infoRectangle">"Perímetro: %s     Área: %s\n"</string>
+    <string name="emptyInput">Ingresa los datos.</string>
+    <string name="rectangle_image">Imagen Rectangulo</string>
+    <string name="perimeter_rectangle">P= 2 * A + 2 * L</string>
+    <string name="area_rectangle">A = A * L</string>
 
     <string-array name="figurs">
         <item>Triángulo</item>
         <item>Cuadrado</item>
-        <item>Rectángle</item>
+        <item>Rectángulo</item>
         <item>Pentágono</item>
         <item>Hexágono</item>
         <item>Círculo</item>
