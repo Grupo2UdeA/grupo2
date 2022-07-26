@@ -8,9 +8,14 @@
     <string name="todo">TODO</string>
     <string name="square">Cuadrado</string>
     <string name="side">Lado del cuadrado</string>
-    <string name="calculate">Calcular</string>
+    <string name="calculate">calcular</string>
     <string name="ecuaP">P=4l</string>
     <string name="ecuaA">A=l*l</string>
+    <string name="value_a" >Ingrese Apotema</string>
+    <string name="value_l">Ingrese lado</string>
+    <string name="button">Calcular</string>
+    <string name="result_t" />
+    <string name="text_title">Pentagono</string>
     <string name="Circle">Círculo</string>
     <string name="perimeter_circle">P = 2 * pi * R</string>
     <string name="area_circle">A = pi * R^2</string>
@@ -33,6 +38,11 @@
         <item>Pentágono</item>
         <item>Hexágono</item>
         <item>Círculo</item>
+    </string-array>
+    <string-array name="unids">
+        <item>m</item>
+        <item>Cm</item>
+        <item>mm</item>
     </string-array>
 
 </resources>
