@@ -31,6 +31,15 @@
     <string name="perimeter_rectangle">P= 2 * A + 2 * L</string>
     <string name="area_rectangle">A = A * L</string>
 
+    <string name="triangle">Triángulo Equilatero</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="infoTriangle">"Perímetro: %s     Área: %s\n"</string>
+    <string name="triangle_image">Imagen Triangulo</string>
+    <string name="perimeter_triangle">P= B * 3</string>
+    <string name="area_triangle">A = B * H / 2</string>
+
+
     <string-array name="figurs">
         <item>Triángulo</item>
         <item>Cuadrado</item>

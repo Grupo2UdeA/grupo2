@@ -10,6 +10,7 @@ import com.arlequins.grupo2.ui.Penta.PentaActivity
 import com.arlequins.grupo2.ui.circle.CircleActivity
 import com.arlequins.grupo2.ui.rectangle.RectangleActivity
 import com.arlequins.grupo2.ui.square.SquareActivity
+import com.arlequins.grupo2.ui.triangle.TriangleActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                 if (figure == "Círculo") goToCircle()
                 if (figure == "Rectángulo") goToRectangle()
                 if (figure == "Pentágono") goToPenta()
+                if (figure == "Triángulo") goToTriangle()
             }
         }
     }
@@ -52,5 +54,11 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, RectangleActivity::class.java)
         startActivity(intent)
     }
+
+    private fun goToTriangle() {
+        val intent = Intent(this, TriangleActivity::class.java)
+        startActivity(intent)
+    }
+
 // HOLA mundo
 }
