@@ -32,9 +32,6 @@ class MainActivity : AppCompatActivity() {
                 if (figure == "Cuadrado") goToSquare()
                 if (figure == "Círculo") goToCircle()
                 if (figure == "Rectángulo") goToRectangle()
-            }
-            sendButton.setOnClickListener {
-                val figure = figursSpinner.selectedItem.toString()
                 if (figure == "Pentágono") goToPenta()
             }
         }
