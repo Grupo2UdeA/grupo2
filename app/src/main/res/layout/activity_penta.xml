@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/text_title"
     tools:context=".ui.Penta.PentaActivity">
 
     <TextView
@@ -22,6 +23,7 @@
         android:id="@+id/imageView"
         android:layout_width="322dp"
         android:layout_height="342dp"
+        android:contentDescription="pentagono"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
