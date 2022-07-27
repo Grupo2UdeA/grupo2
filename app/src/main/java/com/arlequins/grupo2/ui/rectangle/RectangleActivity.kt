@@ -36,16 +36,16 @@ class RectangleActivity : AppCompatActivity() {
         rectangleBinding.textViewResult.visibility = TextView.INVISIBLE
 
         rectangleBinding.buttonCalculate.setOnClickListener {
-            if (rectangleBinding.InputEditTextWidth.toString()
-                    .isNotEmpty() && rectangleBinding.InputEditTextLength.toString().isNotEmpty()
+            if (rectangleBinding.InputEditTextWidth.text.toString()
+                    .isNotEmpty() && rectangleBinding.InputEditTextLength.text.toString().isNotEmpty()
             ) {
                 rectangleViewModel.calculatePerimeter(
-                    rectangleBinding.InputEditTextWidth.toString().toInt(),
-                    rectangleBinding.InputEditTextLength.toString().toInt()
+                    rectangleBinding.InputEditTextWidth.text.toString().toInt(),
+                    rectangleBinding.InputEditTextLength.text.toString().toInt()
                 )
                 rectangleViewModel.calculateArea(
-                    rectangleBinding.InputEditTextWidth.toString().toInt(),
-                    rectangleBinding.InputEditTextLength.toString().toInt()
+                    rectangleBinding.InputEditTextWidth.text.toString().toInt(),
+                    rectangleBinding.InputEditTextLength.text.toString().toInt()
                 )
                 rectangleBinding.textViewResult.visibility = TextView.VISIBLE
                 rectangleBinding.textViewResult.text =
@@ -59,7 +59,7 @@ class RectangleActivity : AppCompatActivity() {
                 ).show()
                 rectangleBinding.textViewResult.visibility = TextView.INVISIBLE
             }
-
         }
     }
 }
+//Hola gente
