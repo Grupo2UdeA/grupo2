@@ -1,38 +1,54 @@
 package com.arlequins.grupo2.ui.Penta
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.arlequins.grupo2.databinding.ActivityMainBinding
+import com.arlequins.grupo2.R
 import com.arlequins.grupo2.databinding.ActivityPentaBinding
-import com.arlequins.grupo2.ui.main.MainViewModel
 
 class PentaActivity : AppCompatActivity() {
-    private lateinit var mainViewModel: PentaViewModel
-    private lateinit var mainBinding: ActivityPentaBinding
+    private lateinit var pentaViewModel: PentaViewModel
+    private lateinit var pentaBinding: ActivityPentaBinding
+
     //    private var acum1=0.0
-    private var m1spinner="m"
-    private var cant1 =0.0
-    private var cantA1 =0.0
+    private var m1spinner = "m"
+    private var cant1 = 0.0
+    private var cantA1 = 0.0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mainBinding = ActivityPentaBinding.inflate(layoutInflater)
-        val view = mainBinding.root
+        pentaBinding = ActivityPentaBinding.inflate(layoutInflater)
+        val view = pentaBinding.root
         setContentView(view)
-        mainViewModel = ViewModelProvider(this).get(PentaViewModel::class.java)
-        mainViewModel.resultdata.observe(this) { most ->
-            mainBinding.textView2.text = most
+        pentaViewModel = ViewModelProvider(this).get(PentaViewModel::class.java)
+        pentaViewModel.resultdata.observe(this) { most ->
+            pentaBinding.textView2.text = most
         }
-        with(mainBinding) {
+        pentaBinding.textView2.visibility = TextView.INVISIBLE
+        with(pentaBinding) {
             button.setOnClickListener {
-                m1spinner = spinner.selectedItem.toString()
-                val cant = textLado.text.toString()
-                val cantA = textApo.text.toString()
-                cant1 = cant.toDouble()
-                cantA1 = cantA.toDouble()
-                mainViewModel.calc(cant1,cantA1,m1spinner)
-                //textView.text=imp1.toString()
-                //textView.text=m2spinner
+                if (textLado.text.toString().isNotEmpty() && textApo.text.toString().isNotEmpty()) {
+                    m1spinner = spinner.selectedItem.toString()
+                    val cant = textLado.text.toString()
+                    val cantA = textApo.text.toString()
+                    cant1 = cant.toDouble()
+                    cantA1 = cantA.toDouble()
+                    pentaViewModel.calc(cant1, cantA1, m1spinner)
+                    //textView.text=imp1.toString()
+                    //textView.text=m2spinner
+                    pentaBinding.textView2.visibility = TextView.VISIBLE
+
+                } else {
+                    Toast.makeText(
+                        this@PentaActivity,
+                        getString(R.string.emptyInput),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    pentaBinding.textView2.visibility = TextView.INVISIBLE
+
+
+                }
             }
         }
     }

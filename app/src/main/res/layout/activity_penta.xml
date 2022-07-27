@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="@string/text_title"
     tools:context=".ui.Penta.PentaActivity">
 
     <TextView
@@ -22,6 +23,7 @@
         android:id="@+id/imageView"
         android:layout_width="322dp"
         android:layout_height="342dp"
+        android:contentDescription="pentagono"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -42,7 +44,8 @@
             android:id="@+id/text_lado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/value_l" />
+            android:hint="@string/value_l"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -60,7 +63,8 @@
             android:id="@+id/text_apo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/value_a" />
+            android:hint="@string/value_a"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
