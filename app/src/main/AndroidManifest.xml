@@ -24,6 +24,9 @@
             android:name=".ui.rectangle.RectangleActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.Penta.PentaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.square.SquareActivity"
             android:exported="false" />
         <activity
